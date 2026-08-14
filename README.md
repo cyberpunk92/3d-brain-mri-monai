@@ -69,6 +69,48 @@ The pipeline outputs synchronized cross-sectional reconstructions across all thr
 ## Repository Structure
 
 ```text
+
+Installation and Setup
+1. Clone the Repository
+Bash
+git clone [https://github.com/cyberpunk92/3d-brain-mri-monai.git](https://github.com/cyberpunk92/3d-brain-mri-monai.git)
+cd 3d-brain-mri-monai
+2. Create and Activate a Virtual Environment
+On Windows (PowerShell):
+
+PowerShell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+On Linux/macOS:
+
+Bash
+python3 -m venv venv
+source venv/bin/activate
+3. Install Dependencies
+Bash
+pip install -r requirements.txt
+Usage
+Run the primary pipeline script to execute preprocessing, model inference, and multi-planar visual artifact generation:
+
+Bash
+python main.py
+Upon execution, the script produces:
+
+brain_mri_volume.nii.gz: Compressed volumetric NIfTI 3D scan.
+
+sample_3d_mpr_visualization.png: Synchronized 3-axis orthogonal reconstruction figure.
+
+License
+This project is open-source and available under the MIT License.
+
+
+---
+
+### Step 3: Save and Check
+1. Click **"Commit changes..."** $\rightarrow$ **"Commit changes"**.
+2. Click the repository name **`3d-brain-mri-monai`** in the top left breadcrumbs or go to:  
+   👉 **[https://github.com/cyberpunk92/3d-brain-mri-monai](https://github.com/cyberpunk92/3d-brain-mri-monai)**
+3. Scroll down on the main repo page: it will render the formatted Markdown layout with headers, lists, code boxes, and your 3-axis brain image.
 3d-brain-mri-monai/
 ├── main.py                          # Full 3D generation, transform, and inference pipeline
 ├── requirements.txt                 # Project dependencies
