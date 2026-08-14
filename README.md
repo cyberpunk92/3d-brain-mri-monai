@@ -1,10 +1,10 @@
-# 🧠 3D Volumetric Brain MRI Segmentation & Multi-Planar Reconstruction (MONAI)
+#  3D Volumetric Brain MRI Segmentation & Multi-Planar Reconstruction (MONAI)
 
 An end-to-end 3D medical image analysis pipeline built with **MONAI (Medical Open Network for AI)** and **PyTorch**. The system processes volumetric NIfTI (`.nii.gz`) neuroimaging scans, executes research-grade spatial and intensity transforms, runs 3D UNet segmentation inference, and produces **3-axis Multi-Planar Orthogonal Reconstructions (MPR)**.
 
 ---
 
-## 🎯 Multi-Planar Orthogonal Visualization (MPR)
+##  Multi-Planar Orthogonal Visualization (MPR)
 
 Below is the synchronized 3-axis orthogonal cross-section (Axial, Coronal, Sagittal) showing the T1-weighted anatomical brain structures and the localized lesion segmentation overlay:
 
@@ -12,7 +12,7 @@ Below is the synchronized 3-axis orthogonal cross-section (Axial, Coronal, Sagit
 
 ---
 
-## 🔬 Core Capabilities
+##  Core Capabilities
 
 * **Volumetric Preprocessing:** Dictionary-based MONAI pipeline implementing affine reorientation (`RAS`), isotropic voxel resampling (`Spacingd`), and percentile intensity normalization.
 * **3D Architecture:** Volumetric PyTorch `UNet` configured with 3D spatial convolutions and residual skip connections.
@@ -21,7 +21,7 @@ Below is the synchronized 3-axis orthogonal cross-section (Axial, Coronal, Sagit
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Framework:** MONAI & PyTorch
 * **Data Processing:** SimpleITK, Nibabel, NumPy, SciPy
@@ -29,7 +29,7 @@ Below is the synchronized 3-axis orthogonal cross-section (Axial, Coronal, Sagit
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the Repository
 ```bash
